@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/purple_500"
+        >
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginRight="260dp"
+            android:text="Halooo"/>
+
+        <TextView
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whitef9"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:text="Keluar"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true">
+        </ViewFlipper>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_below="@id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/priceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_below="@id/recycler_view"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:onClick="checkout"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

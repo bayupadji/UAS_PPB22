@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="32dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"/>
+
+    <EditText
+        android:id="@+id/nama_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:lines="1"
+        android:padding="12dp"
+        android:background="@drawable/custom_input"
+        android:singleLine="true"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/email_regis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:lines="1"
+        android:padding="12dp"
+        android:background="@drawable/custom_input"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_regis"
+        android:hint="Password"
+        android:lines="1"
+        android:singleLine="true"
+        android:padding="12dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordconfirm_regis"
+        android:hint="Confirm Password"
+        android:lines="1"
+        android:singleLine="true"
+        android:padding="12dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btn_regis"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custombutton"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="have an account ?"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="14sp"
+            android:textColor="@color/bluelight"
+            android:layout_marginTop="8dp"
+            android:id="@+id/signin_regis"/>
+    </LinearLayout>
+
+</LinearLayout>
