@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginUas</string>
+    <string name="login">LOGIN</string>
+    <string name="username">username</string>
+    <string name="fullname">full name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="signup">sign up</string>
+
+</resources>
